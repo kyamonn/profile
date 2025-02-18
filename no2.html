@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="tori1" src="kingfisher/scene.gltf"></a-asset-item>
+            <a-asset-item id="tori2" src="kingfisher/scene.gltf"></a-asset-item>
+            <a-asset-item id="tori3" src="kingfisher/scene.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity gltf-model="#tori1" position="0 1.6 -2" scale="5 5 5" animation="property: position; to: -3 1.6 -3; dir: alternate; dur: 1000; loop: true; easing: easeInOutSine" onclick="window.location.href = 'no12.html'"></a-entity>
+        <a-entity gltf-model="#tori2" position="1 1.6 -2" scale="5 5 5" animation="property: position; to: -1 1.6 -2; dir: alternate; dur: 2000; loop: true; easing: easeInOutSine" onclick="window.location.href = 'no12.html'"></a-entity>
+        <a-entity gltf-model="#tori3" position="0 1.6 -1" scale="5 5 5" animation="property: position; to: 0 -5 -3; dir: alternate; dur: 1500; loop: true; easing: easeInOutSine" onclick="window.location.href = 'no12.html'"></a-entity>
+        <a-entity cursor="rayOrigin: mouse"></a-entity>
+        <a-sky src="w.jpg" ></a-sky>
+    </a-scene>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>mizu1</title>
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script>
+            AFRAME.registerComponent("change_sky",{
+                init: function(){
+                    this.el.addEventListener("click", function(){
+                        console.log("sphereがクリックされました");
+                        const sky = document.getElementById("my_sky");
+                        let image = this.getAttribute('src');
+                        sky.setAttribute("src", image);
+                        sky.setAttribute("color","");
+                        window.location.href = "no12.html";
+                    });
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <a-scene>
+            <a-entity cursor="rayOrigin: mouse"></a-entity>
+            <a-sky id="my_sky" color="black"></a-sky>
+            <a-box change_sky position="0 0 -5" src="IMG_0940.jpg"></a-box>
+            <a-sphere change_sky position="5 0 -3" src="candy.jpg"></a-sphere>
+            <a-entity gltf-model="#snoopy" position="0 0 -10"></a-entity>
+            <a-assets>
+                <a-sset-item id="snoopy" src="scene.gltf" position="1 5 10" animation-mixer="clip:Walk"></a-sset-item>
+            </a-assets>
+        </a-scene>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+

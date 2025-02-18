@@ -1,0 +1,42 @@
+#main_title { background-color: #c40000; color: #fff;  }
+#main_title_h1 {font-size: 65px;font-family:monospace;}
+#prof_img {border-radius: 20%; }
+body{background-color: #1c1111;}
+tbody{ color: #ccc5c4; background-color: #1c1111;}
+.button013 a {
+    background: #ccc5c4;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    z-index:0;
+    border-left: solid 5px #1c1111;
+}
+.button013 a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    display: block;
+    background: #1c1111;
+    transition: .3s;
+    left:0;
+}
+.button013 a:hover {
+    color: #FFF;
+}
+.button013 a:hover:before {
+    width: 100%;
+    z-index: -1;
+}
+.wf-kokoro { font-family: "Kokoro"; }
+h6{ color: #1c1111;font-size: 25px;}
+
+
